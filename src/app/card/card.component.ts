@@ -20,5 +20,6 @@ export class DomainType {
   public title: string;
   public body: string;
   public imageUrl: string;
+  public bodyTitle?: string;
   public iconUrl?: string;
 }
