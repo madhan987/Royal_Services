@@ -4,29 +4,29 @@ import { DomainType } from '../card/card.component';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  domainSvcTypes: DomainType[] = [];
+  public domainSvcTypes: DomainType[] = [];
 
   constructor() { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.domainSvcTypes = [
       {
-        title: "Introduction",
-        body: "",
-        imageUrl: "/assets/images/BESCOM.jpg",
+        title: 'Introduction',
+        body: ' Our organization is an assembly of hardworking, experience, dynamic and dedicated professional working to provide quality and superior business solutions. ',
+        imageUrl: '/assets/images/introduction.JPG',
       },
       {
-        title: "Business Profile",
-        body: "",
-        imageUrl: "/assets/images/HT_LT_Electrification.jpg",
+        title: 'Business Profile',
+        body: '',
+        imageUrl: '/assets/images/business.JPG',
       },
       {
-        title: "Goals",
-        body: "",
-        imageUrl: "/assets/images/Aerial_Bundled_Conductor.png",
+        title: 'Goals',
+        body: '',
+        imageUrl: '/assets/images/goal.JPG',
       },
       // {
       //   title: "New Electrical poles",
