@@ -20,14 +20,10 @@ mat-tab-group p {
     padding-top: 20px;
 }
 
-.cardList {
-    display: flex;
-    flex-direction: column;
+.carousel-item>img {
+    width: 100%;
 }
 
-
-/* Row Gap */
-
-.cardList>*:not(:last-child) {
-    margin-bottom: 32px;
+.carousel-item>img {
+    height: 400px;
 }
