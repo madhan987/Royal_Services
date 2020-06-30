@@ -8,6 +8,7 @@ import { DomainType } from '../card/card.component';
 })
 export class HomeComponent implements OnInit {
   public domainSvcTypes: DomainType[] = [];
+  public serviceTypes: DomainType[] = [];
 
   constructor() { }
 
@@ -39,10 +40,40 @@ export class HomeComponent implements OnInit {
       //   imageUrl: "/assets/images/Electrical_Pole.jpg",
       // },
     ];
+    this.serviceType();
   }
 
   public executeSelectedChange = (event) => {
     console.log(event);
   }
-
+  public serviceType() {
+    this.serviceTypes = [
+      {
+        title: '',
+        body: '',
+        imageUrl: '/assets/images/hotel1.JPG',
+      },
+      {
+        title: '',
+        // tslint:disable-next-line: max-line-length
+        body: '',
+        imageUrl: '/assets/images/hotel2.JPG',
+      },
+      {
+        title: '',
+        body: '',
+        imageUrl: '/assets/images/market1.JPG',
+      },
+      {
+        title: '',
+        body: '',
+        imageUrl: '/assets/images/market2.JPG',
+      }
+      // {
+      //   title: "New Electrical poles",
+      //   body: "",
+      //   imageUrl: "/assets/images/Electrical_Pole.jpg",
+      // },
+    ];
+  }
 }

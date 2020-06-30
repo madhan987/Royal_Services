@@ -34,24 +34,29 @@ mat-tab-group p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
-  
-  .line {
+}
+
+.line {
     flex: 1;
     padding-left: 30px;
     padding-right: 30px;
-  }
-  
-  .text {
+}
+
+.text {
     padding-left: 10px;
     padding-right: 10px;
     font-size: large;
-  }
+}
 
-  .mat-divider {
+.mat-divider {
     display: block;
     margin: 0;
     border-top-width: 3px;
     border-top-style: solid;
     border-top-color: black
- }
+}
+
+ul,
+li {
+    list-style: outside none none;
+}

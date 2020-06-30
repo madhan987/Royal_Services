@@ -43,19 +43,63 @@
 
     <mat-tab-group (selectedTabChange)="executeSelectedChange($event)">
         <mat-tab label="Hotels And Hospitality">
-            <p>We are going to use different material components to create nice looking angular app.</p>
-            <p>We will consume our .NET Core application. Basically, we will create complete CRUD client app.</p>
+            <div class="row p-2 m-0">
+                <div class="col-sm col-md">
+                    <app-card [domain]="serviceTypes[0]"></app-card>
+                </div>
+                <div class="col-sm col-md">
+                    <app-card [domain]="serviceTypes[1]"></app-card>
+                </div>
+            </div>
+            <mat-card>
+                <strong>Services Available in Hotels and Hospitality</strong>
+                <div class="row">
+                    <div class="col-sm col-md">
+                        <ul class="m-3 p-0">
+                            <li>Food & beverage Services (waiters and bartender)</li>
+                            <li>Front office Management (Receptionist call operator)</li>
+                            <li>Room Boy /laundry Man/ Cleaners</li>
+                        </ul>
+                    </div>
+                </div>
+            </mat-card>
+
         </mat-tab>
         <mat-tab label="Supermarkets & Hypermarket">
-            <p>We will consume our .NET Core application. Basically, we will create complete CRUD client app.</p>
+            <div class="row p-2 m-0">
+                <div class="col-sm col-md">
+                    <app-card [domain]="serviceTypes[2]"></app-card>
+                </div>
+                <div class="col-sm col-md">
+                    <app-card [domain]="serviceTypes[3]"></app-card>
+                </div>
+            </div>
+            <mat-card>
+                <strong>Services Available in Supermarkets & Hypermarket</strong>
+                <div class="row">
+                    <div class="col-sm col-md-3 p-0">
+                        <ul class="m-3 p-0">
+                            <li>Sales supervisor</li>
+                            <li>Salesmen/Salesgirl</li>
+                            <li>Checkout cashier</li>
+                            <li>Trolley boys</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm col-md-3 p-0">
+                        <ul class="m-3 p-0">
+                            <li>Shelves Rack organizers</li>
+                            <li>Store keepers/Cleaners</li>
+                            <li>Loading and unloadingHelper</li>
+                        </ul>
+                    </div>
+                </div>
+            </mat-card>
         </mat-tab>
         <mat-tab label="Facility Management Services">
-            <p>By using material components, we are going to create fully responsive navigation menu, with its side-bar
-                as well.</p>
+            <p>By using material components, we are going to create fully responsive navigation menu, with its side-bar as well.</p>
         </mat-tab>
         <mat-tab label="Security">
-            <p>By using material components, we are going to create fully responsive navigation menu, with its side-bar
-                as well.</p>
+            <p>By using material components, we are going to create fully responsive navigation menu, with its side-bar as well.</p>
         </mat-tab>
     </mat-tab-group>
 </section>

@@ -1,5 +1,5 @@
 <mat-card class="example-card mb-2">
-    <mat-card-header class="mb-2" style="height: 60px;">
+    <mat-card-header *ngIf="domain?.title" class="mb-2" style="height: 60px;">
         <mat-card-title class="m-0  text-wrap">{{ domain?.title }}</mat-card-title>
     </mat-card-header>
     <img width="230px" height="200px" mat-card-image src="{{ domain?.imageUrl }}" alt="Photo of a Shiba Inu" />
