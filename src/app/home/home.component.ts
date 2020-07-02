@@ -25,13 +25,13 @@ export class HomeComponent implements OnInit {
         title: 'Business Profile',
         // tslint:disable-next-line: max-line-length
         body: 'M/S Royal Value Services is committed to helping organizations to increase their productivity through better use of their human resources and to enable companies to achive real competitive advantages',
-        imageUrl: '/assets/images/business.JPG',
+        imageUrl: '/assets/images/BusinessProfile.jpg',
         bodyTitle: 'Royal Value Services'
       },
       {
         title: 'Goals',
         body: 'Our mission at Royal Value Services is simple as we dream to be the best source in the manpower industry and help the people achieve their desired success.',
-        imageUrl: '/assets/images/goal.JPG',
+        imageUrl: '/assets/images/goals.jpg',
         bodyTitle: 'Royal Value Services'
       },
       // {
