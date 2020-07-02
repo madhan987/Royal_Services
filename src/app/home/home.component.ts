@@ -34,11 +34,7 @@ export class HomeComponent implements OnInit {
         imageUrl: '/assets/images/goals.jpg',
         bodyTitle: 'Royal Value Services'
       },
-      // {
-      //   title: "New Electrical poles",
-      //   body: "",
-      //   imageUrl: "/assets/images/Electrical_Pole.jpg",
-      // },
+
     ];
     this.serviceType();
   }
