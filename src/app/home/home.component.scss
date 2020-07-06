@@ -60,3 +60,17 @@ ul,
 li {
     list-style: outside none none;
 }
+
+.carousel-caption {
+    // top: 150;
+    animation: mymove 2s linear
+}
+
+@keyframes mymove {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 250px;
+    }
+}

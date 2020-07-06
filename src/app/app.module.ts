@@ -12,6 +12,7 @@ import { MaterialModule } from './material/material.module';
 import { NavigationComponent } from './navigation/navigation.component';
 import { CardComponent } from './card/card.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     CardComponent,
     FooterComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
