@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomainType } from '../card/card.component';
 
-declare var require: any;
-const FileSaver = require('file-saver');
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -44,8 +41,8 @@ export class HomeComponent implements OnInit {
 
   public downloadPdf() {
     const pdfUrl = './assets/pdf/royal.pdf';
-    // window.open(pdfUrl + '#page=' + 1, '_blank', '', true);
-    FileSaver.saveAs(pdfUrl, 'pdfName');
+    window.open(pdfUrl + '#page=' + 1, '_blank', '', true);
+    // FileSaver.saveAs(pdfUrl, 'pdfName');
   }
 
   public executeSelectedChange = (event) => {
