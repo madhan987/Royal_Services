@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { DomainType } from '../card/card.component';
 
+declare var require: any;
+const FileSaver = require('file-saver');
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -19,24 +22,29 @@ export class HomeComponent implements OnInit {
         // tslint:disable-next-line: max-line-length
         body: 'Our organization is an assembly of hardworking, experience, dynamic and dedicated professional working to provide quality and superior business solutions. ',
         imageUrl: '/assets/images/introduction.JPG',
-        bodyTitle: 'Dear Well Wishers'
+        bodyTitle: 'Dear Well Wishers',
       },
       {
         title: 'Business Profile',
         // tslint:disable-next-line: max-line-length
         body: 'M/S Royal Value Services is committed to helping organizations to increase their productivity through better use of their human resources and to enable companies to achive real competitive advantages',
         imageUrl: '/assets/images/BusinessProfile.jpg',
-        bodyTitle: 'Royal Value Services'
+        bodyTitle: 'Royal Value Services',
       },
       {
         title: 'Goals',
         body: 'Our mission at Royal Value Services is simple as we dream to be the best source in the manpower industry and help the people achieve their desired success.',
         imageUrl: '/assets/images/goals.jpg',
-        bodyTitle: 'Royal Value Services'
+        bodyTitle: 'Royal Value Services',
       },
 
     ];
     this.serviceType();
+  }
+
+  public downloadPdf() {
+    const pdfUrl = './assets/pdf/royal.pdf';
+    window.open(pdfUrl + '#page=' + 1, '_blank', '', true);
   }
 
   public executeSelectedChange = (event) => {
@@ -64,7 +72,7 @@ export class HomeComponent implements OnInit {
         title: '',
         body: '',
         imageUrl: '/assets/images/market2.JPG',
-      }
+      },
       // {
       //   title: "New Electrical poles",
       //   body: "",

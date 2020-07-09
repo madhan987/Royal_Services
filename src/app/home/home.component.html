@@ -12,8 +12,8 @@
                     Contact Us At
                 </h3>
                 <p data-animation="animated bounceInRight" class="font-weight-bold">
-                    <a href="mailto:royalvalueservices@gmail.com"><i class="fa fa-envelope"></i>&nbsp;<span>Email
-                        :</span>royalvalueservices@gmail.com</a>
+                    <a href="tel:9663688911"><i class="fa fa-phone"></i> &nbsp;<span>Phone : </span>
+                        9743461955</a>
                 </p>
                 <!-- <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button> -->
             </div>
@@ -35,7 +35,7 @@
     </a>
 </div>
 
-<div class="row p-3 my-5">
+<div class="row p-3 mt-5">
     <ng-container *ngFor="let svcType of domainSvcTypes">
         <div class="col-sm col-md">
             <app-card [domain]="svcType"></app-card>
@@ -43,13 +43,23 @@
     </ng-container>
 </div>
 
+<div class="row">
+    <div class="col-md">
+        <mat-card>
+            <h2>Click on the below Link to View the Certification</h2>
+            <a href="javascript:void(0)" style="cursor:pointer" (click)="downloadPdf()">
+                    VIEW DOCUMENT
+                  </a>
+        </mat-card>
+    </div>
+</div>
 
 <section fxLayout="column" fxFlexAlign="stretch">
     <div fxFlexAlign="center">
-        <p class="mt-0">Employment And Manpower Services</p>
+        <p class="m-0 mt-4">Employment And Manpower Services</p>
     </div>
 
-    <p class="m-0">The Services Provided by the company :</p>
+    <p class="m-0 my-2 p-0">The Services Provided by the company :</p>
 
     <mat-tab-group (selectedTabChange)="executeSelectedChange($event)">
         <mat-tab label="Hotels And Hospitality">
