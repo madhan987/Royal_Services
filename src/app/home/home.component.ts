@@ -44,7 +44,8 @@ export class HomeComponent implements OnInit {
 
   public downloadPdf() {
     const pdfUrl = './assets/pdf/royal.pdf';
-    window.open(pdfUrl + '#page=' + 1, '_blank', '', true);
+    // window.open(pdfUrl + '#page=' + 1, '_blank', '', true);
+    FileSaver.saveAs(pdfUrl, 'pdfName');
   }
 
   public executeSelectedChange = (event) => {
