@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
         title: 'Introduction',
         // tslint:disable-next-line: max-line-length
         body: 'Our organization is an assembly of hardworking, experience, dynamic and dedicated professional working to provide quality and superior business solutions. ',
-        imageUrl: '/assets/images/introduction.JPG',
+        imageUrl: '/assets/images/intro.jpg',
         bodyTitle: 'Dear Well Wishers',
       },
       {
