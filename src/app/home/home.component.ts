@@ -74,6 +74,16 @@ export class HomeComponent implements OnInit {
       {
         title: '',
         body: '',
+        imageUrl: '/assets/images/facility1.jpg',
+      },
+      {
+        title: '',
+        body: '',
+        imageUrl: '/assets/images/facility2.jpg',
+      },
+      {
+        title: '',
+        body: '',
         imageUrl: '/assets/images/security1.jpg',
       },
       {
