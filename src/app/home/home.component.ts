@@ -53,13 +53,13 @@ export class HomeComponent implements OnInit {
       {
         title: '',
         body: '',
-        imageUrl: '/assets/images/hotel1.JPG',
+        imageUrl: '/assets/images/hotel3.jpg',
       },
       {
         title: '',
         // tslint:disable-next-line: max-line-length
         body: '',
-        imageUrl: '/assets/images/hotel2.JPG',
+        imageUrl: '/assets/images/hotel4.jpg',
       },
       {
         title: '',
