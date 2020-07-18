@@ -87,10 +87,10 @@
         </mat-tab>
         <mat-tab label="Supermarkets & Hypermarket">
             <div class="row p-2 m-0">
-                <div class="col-sm col-md">
+                <div class="col-sm col-md-5">
                     <app-card [domain]="serviceTypes[2]"></app-card>
                 </div>
-                <div class="col-sm col-md">
+                <div class="col-sm col-md-5">
                     <app-card [domain]="serviceTypes[3]"></app-card>
                 </div>
             </div>
@@ -119,7 +119,14 @@
             <p>By using material components, we are going to create fully responsive navigation menu, with its side-bar as well.</p>
         </mat-tab>
         <mat-tab label="Security">
-            <p>By using material components, we are going to create fully responsive navigation menu, with its side-bar as well.</p>
+            <div class="row p-2 m-0">
+                <div class="col-sm col-md-5">
+                    <app-card [domain]="serviceTypes[4]"></app-card>
+                </div>
+                <!-- <div class="col-sm col-md-5">
+                    <app-card [domain]="serviceTypes[3]"></app-card>
+                </div> -->
+            </div>
         </mat-tab>
     </mat-tab-group>
 </section>

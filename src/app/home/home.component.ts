@@ -71,11 +71,11 @@ export class HomeComponent implements OnInit {
         body: '',
         imageUrl: '/assets/images/market2.JPG',
       },
-      // {
-      //   title: "New Electrical poles",
-      //   body: "",
-      //   imageUrl: "/assets/images/Electrical_Pole.jpg",
-      // },
+      {
+        title: '',
+        body: '',
+        imageUrl: '/assets/images/security1.jpg',
+      },
     ];
   }
 }
