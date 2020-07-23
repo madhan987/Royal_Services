@@ -74,3 +74,15 @@ li {
         top: 250px;
     }
 }
+
+
+.carousel-item .img-container {
+    position: absolute;
+    left: 0;
+    right:0;
+    top: 10px;
+}
+
+.carousel-item .img-container .img-text img{
+    width:23%;
+}
